@@ -5,9 +5,9 @@
    
     <div class="row">
       @foreach ($allBuku as $buku) 
-      <div class="col-md-4">
-        <div class="card mb-4 shadow-sm">
-          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 80%; width: 100%; display: block;" src="/img/{{ $buku->file_gambar }}" data-holder-rendered="true">
+      <div class="col-md-2">
+        <div class="card mb-2 shadow-sm">
+          <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 100%; width: 100%; display: block;" src="/img/{{ $buku->file_gambar }}" data-holder-rendered="true">
           <div class="card-body">
             <p class="card-text"><b>Stok tersedia: {{ $buku->stok_tersedia }}</b></p>
             <div class="d-flex justify-content-between align-items-center">
