@@ -1,14 +1,13 @@
 @extends('layouts.main')
 
-<?php 
-  if (isset($_POST['submit'])) {
-    $ok = true;
-    
-  }
+<?php
+if (isset($_POST['submit'])) {
+
+}
 ?>
 
 @section('container')
- 
+
 <div class="mx-auto card col-4">
   <h4 class="card-header">Login</h4>
   <div class="card-body">
@@ -31,5 +30,5 @@
   </div>
 
 </div>
-    
+
 @endsection
