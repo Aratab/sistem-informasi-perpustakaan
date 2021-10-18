@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BukuController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [BukuController::class, 'index']);
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/login', [HomeController::class, 'login']);
