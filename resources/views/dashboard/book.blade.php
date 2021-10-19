@@ -1,3 +1,5 @@
+{{-- MEMBUAT DAFTAR BUKU DASHBOARD --}}
+
 @extends('layouts.dashboard')
 
 @section('container')

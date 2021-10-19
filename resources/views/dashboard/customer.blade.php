@@ -6,7 +6,7 @@
       <h1 class="h2">Data Pelanggan</h1>
       <div class="btn-toolbar mb-2 mb-md-0">
         <div class="btn-group me-2">
-          <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+          <a class="btn btn-sm btn-outline-secondary" href="/dashboard/customer/add">Add</a>
           <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
         </div>
         <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">

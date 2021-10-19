@@ -20,7 +20,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{ ($title === "Data Pelanggan") ? 'active' : ''}}" href="/dashboard/customer">
+          <a class="nav-link {{ ($title === "Data Pelanggan") ? 'active' : ''}} {{ ($title === "Tambah Pelanggan") ? 'active' : ''}}" href="/dashboard/customer">
             <span data-feather="users"></span>
             Data Pelanggan
           </a>

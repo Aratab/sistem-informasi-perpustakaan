@@ -43,7 +43,7 @@ class HomeController extends Controller
 
     public function dashboard()
     {
-        return view("maindash", [
+        return view("dashboard.maindash", [
             "title" => "Petugas",
             "allBuku" => Buku::all()
         ]);
@@ -51,7 +51,7 @@ class HomeController extends Controller
 
     public function book()
     {
-        return view("book", [
+        return view("dashboard.book", [
             "title" => "Daftar Buku",
             "allBuku" => Buku::all()
         ]);
@@ -59,9 +59,29 @@ class HomeController extends Controller
 
     public function customer()
     {
-        return view("customer", [
+        return view("dashboard.customer", [
             "title" => "Data Pelanggan",
             "allAnggota" => Anggota::all()
+        ]);
+    }
+
+    public function addCustomer()
+    {
+        return view("dashboard.addCust", [
+            "title" => "Tambah Pelanggan",
+            "selectAnggota" => Anggota::select('select * from users where active = ?', [1])
+        ]);
+    }
+
+    public function validateAddCustomer(Request $request)
+    {
+        $validatedData = $request->validate([
+            'nim' => 'required|unique:post',
+            'nama' => 'required',
+            'alamat' => 'required',
+            'kota' => 'required',
+            'email' => 'required',
+            'no_telp' => 'required'
         ]);
     }
 }
