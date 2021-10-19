@@ -2,7 +2,7 @@
     <div class="position-sticky pt-3">
       <ul class="nav flex-column">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">
+          <a class="nav-link {{ ($title === "Petugas") ? 'active' : ''}} " aria-current="page" href="/dashboard">
             <span data-feather="home"></span>
             Dashboard
           </a>
@@ -14,13 +14,13 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/daftar-buku">
+          <a class="nav-link {{ ($title === "Daftar Buku") ? 'active' : ''}} " href="/dashboard/book">
             <span data-feather="shopping-cart"></span>
             Daftar Buku
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link {{ ($title === "Data Pelanggan") ? 'active' : ''}}" href="/dashboard/customer">
             <span data-feather="users"></span>
             Data Pelanggan
           </a>

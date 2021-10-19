@@ -35,10 +35,7 @@
 <div class="container-fluid">
   <div class="row">
     @include('partials.navdash')
-    <div class="container">
-        @yield('container')
-    </div>
-    
+    @yield('container')
   </div>
 </div>
 

@@ -43,6 +43,25 @@ class HomeController extends Controller
 
     public function dashboard()
     {
-        return view("dashboard");
+        return view("maindash", [
+            "title" => "Petugas",
+            "allBuku" => Buku::all()
+        ]);
+    }
+
+    public function book()
+    {
+        return view("book", [
+            "title" => "Daftar Buku",
+            "allBuku" => Buku::all()
+        ]);
+    }
+
+    public function customer()
+    {
+        return view("customer", [
+            "title" => "Data Pelanggan",
+            "allAnggota" => Anggota::all()
+        ]);
     }
 }
